@@ -1,4 +1,4 @@
-import Vaccination from "../models/vaccination.model";
+import Vaccination from "../models/vaccination.model.js";
 // create a vaccination record
 export const createVaccination = async (req, res) => {
   try {

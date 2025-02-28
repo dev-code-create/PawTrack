@@ -1,4 +1,4 @@
-import Pet from "../models/pet.model";
+import Pet from "../models/pet.model.js";
 
 // Get all the pets for a user
 export const getAllPets = async (req, res) => {
