@@ -7,6 +7,7 @@ import feedingRoutes from "./routes/feedingRoute.js";
 import appointmentRoutes from "./routes/appintmentRoutes.js";
 import petSitterRoutes from "./routes/petsitterRoutes.js";
 import activityRoutes from "./routes/activityRoutes.js";
+import connectDB from "./config/db.js";
 dotenv.config();
 
 const app = express();
@@ -20,6 +21,8 @@ app.use("/api/feedings", feedingRoutes);
 app.use("/api/appointments", appointmentRoutes);
 app.use("/api/pet-sitters", petSitterRoutes);
 app.use("/api/activities", activityRoutes);
+
+connectDB();
 
 const PORT = process.env.PORT || 3000;
 
