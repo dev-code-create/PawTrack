@@ -1,4 +1,4 @@
-import feedSchedule from "../models/feedingSchedule.model";
+import feedSchedule from "../models/feedingSchedule.model.js";
 
 export const createFeedingSchedule = async (req, res) => {
   try {

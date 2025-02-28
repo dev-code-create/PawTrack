@@ -2,7 +2,7 @@ import express from "express";
 import {
   createFeedingSchedule,
   getFeedingSchedule,
-} from "../controllers/feedingController";
+} from "../controllers/feedingController.js";
 
 const router = express.Router();
 

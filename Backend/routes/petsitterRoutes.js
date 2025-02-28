@@ -1,5 +1,8 @@
 import express from "express";
-import { addReview, createPetSitter } from "../controllers/petsitterController";
+import {
+  addReview,
+  createPetSitter,
+} from "../controllers/petsitterController.js";
 
 const router = express.Router();
 

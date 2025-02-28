@@ -2,7 +2,7 @@ import express from "express";
 import {
   getActivityHistory,
   logActivity,
-} from "../controllers/activityController";
+} from "../controllers/activityController.js";
 
 const router = express.Router();
 
