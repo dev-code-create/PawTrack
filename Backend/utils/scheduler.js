@@ -1,5 +1,6 @@
-import Vaccination from "../models/vaccination.model";
-import { sendVaccinationReminder } from "./notifications";
+import Vaccination from "../models/vaccination.model.js";
+import { sendVaccinationReminder } from "./notifications.js";
+import nodeSchedule from "node-schedule";
 
 export const scheduleVaccinationReminders = () => {
   nodeSchedule.scheduleJob(" 0 0 * * *", async () => {
