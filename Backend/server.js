@@ -9,11 +9,13 @@ import petSitterRoutes from "./routes/petsitterRoutes.js";
 import activityRoutes from "./routes/activityRoutes.js";
 import connectDB from "./config/db.js";
 import { scheduleVaccinationReminders } from "./utils/scheduler.js";
+import { clerkAuthMiddleware } from "./middleware/clerkAuth.js";
 dotenv.config();
 
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.use(clerkAuthMiddleware);
 
 //Routes
 app.use("/api/pets", petRoutes);
