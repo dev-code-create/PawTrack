@@ -7,7 +7,9 @@ const ThemeToggle = () => {
   return (
     <Button
       onClick={toggleTheme}
-      className="fixed bottom-4 right-4 p-2 bg-white dark:bg-gray-800 rounded-full shadow-md"
+      variant="ghost"
+      size="icon"
+      className="bg-transparent hover:bg-gray-100 dark:hover:bg-gray-700"
     >
       {theme === "dark" ? <Sun /> : <Moon />}
     </Button>

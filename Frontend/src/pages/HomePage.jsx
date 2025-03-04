@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaPaw, FaCalendarAlt, FaClipboardList } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 
 const HomePage = () => {
   return (
@@ -18,7 +19,7 @@ const HomePage = () => {
           <motion.div
             initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            className="space-x-6"
+            className="flex items-center space-x-6"
           >
             <button className="text-gray-600 hover:text-blue-600 transition-colors">
               Features
@@ -29,6 +30,7 @@ const HomePage = () => {
             <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
               Get Started
             </button>
+            <ThemeToggle />
           </motion.div>
         </div>
       </nav>
