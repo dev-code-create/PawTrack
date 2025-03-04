@@ -4,9 +4,9 @@ const SignInPage = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opcaity: 1 }}
+      animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-gh-screen flex items-center"
+      className="min-h-screen flex items-center justify-center"
     >
       <SignIn />
     </motion.div>

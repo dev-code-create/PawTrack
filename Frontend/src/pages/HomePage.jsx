@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaPaw, FaCalendarAlt, FaClipboardList } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -46,13 +47,15 @@ const HomePage = () => {
             Monitor activities, schedule appointments, and manage your pet's
             health all in one place.
           </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-blue-600 text-white text-lg px-8 py-3 rounded-full hover:bg-blue-700 transition-colors"
-          >
-            Start Tracking Now
-          </motion.button>
+          <Link to="/dashboard">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-blue-600 text-white text-lg px-8 py-3 rounded-full hover:bg-blue-700 transition-colors"
+            >
+              Start Tracking Now
+            </motion.button>
+          </Link>
         </motion.section>
 
         <motion.section
